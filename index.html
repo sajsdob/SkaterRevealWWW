@@ -22,7 +22,15 @@
     #image {
       display: inline-block;
       position: relative;
+      animation: jiggle 1s infinite;
     }
+    
+    @keyframes jiggle {
+      0% { transform: rotate(-5deg); }
+      50% { transform: rotate(5deg); }
+      100% { transform: rotate(-5deg); }
+    }
+    
     
     #text-above {
       position: relative;
@@ -47,6 +55,7 @@
       position: relative;
       top: -90px;
     }
+ 
     
     .button {
       display: inline-block;
@@ -58,6 +67,8 @@
     .button img {
       vertical-align: middle;
     }
+
+
   </style>
   <script>
     // JavaScript code to redirect based on device type
@@ -74,7 +85,9 @@
 </head>
 <body onload="redirectToWebsite()">
 <div>
+ 
     <div id="container">
+       
         <div id="text-above">
           <h1>Will it become a skater?</h1>
         </div>
@@ -82,17 +95,21 @@
           <img src="icon.png" alt="App Icon">
         </div>
         <div id="text-below">
-          <h1>DOWNLOAD TO FIND OUT:</h1>
+          <h1><span class="down">👇</span> DOWNLOAD TO FIND OUT <span class="down">👇</span></h1>
         </div>
       </div>
       <div id="buttons">
-          <a class="button" href="https://www.apple.com/app-store/" target="_blank">
+          <a style="margin-right: 10px;" class="button" href="https://www.apple.com/app-store/" target="_blank">
             <img width="200" src="apple.png" alt="App Store">
           </a>
-        <a class="button" href="https://play.google.com/store" target="_blank">
+          
+        <a style="margin-left: 10px;" class="button" href="https://play.google.com/store" target="_blank">
           <img width="200" src="play.png" alt="Google Play Store">
         </a>
       </div>
+
 </div>
+
 </body>
+
 </html>
