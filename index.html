@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Skater App</title>
+  <style>
+    body {
+
+      text-align: center; 
+      background-color: #4ed4ff;
+      color: white;
+      font-family: monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    #container {
+      position: relative;
+      margin-top: 20px;
+    }
+    
+    #image {
+      display: inline-block;
+      position: relative;
+    }
+    
+    #text-above {
+      position: relative;
+      top: 90px;
+      left: 0;
+      right: 0;
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    #text-below {
+        position: relative;
+        top: -90px;
+      left: 0;
+      right: 0;
+      font-size: 18px;
+
+    }
+    
+    #buttons {
+      margin-top: 0px;
+
+      position: relative;
+      top: -90px;
+    }
+    
+    .button {
+      display: inline-block;
+      border-radius: 5px;
+      text-decoration: none;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;    }
+    
+    .button img {
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+ <div> <div id="container">
+    <div id="text-above"><h1>Will it become a skater?</h1></div>
+    <div id="image"> 
+      <img src="icon.png" alt="App Icon">
+    </div>
+    <div id="text-below"><h1>DOWNLOAD TO FIND OUT:</h1></div>
+  </div>
+  <div id="buttons">
+    <a class="button" href="https://play.google.com/store" target="_blank">
+      <img width="200"  src="play.png" alt="Google Play Store">
+    </a>
+    <a class="button" href="https://www.apple.com/app-store/" target="_blank">
+      <img width="200" src="apple.png" alt="App Store">
+    </a>
+  </div></div>
+</body>
+</html>
